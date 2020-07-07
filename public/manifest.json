@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mockview",
+  "name": "mocks, with a view",
   "icons": [
     {
       "src": "favicon.ico",
