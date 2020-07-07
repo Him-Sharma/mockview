@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders mockview header', () => {
   const { getByText } = render(<App />);
-  const headerElement = getByText('Mockview: mocks, with a view');
+  const headerElement = getByText('Mockview');
   expect(headerElement).toBeInTheDocument();
 });

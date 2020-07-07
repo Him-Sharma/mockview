@@ -3,9 +3,9 @@
 }
 .header {
   width: 100%;
-  color: white;
   font-size: calc(10px + 2vmin);
   background-color: #41495a;
+  color: #09d3ac;
 }
 .control {
   width: 100%;
@@ -24,7 +24,7 @@
   background-color: #41495a;
 }
 .flex-container > div {
-  color: white;
+  color: #09d3ac;
   margin: 10px;
   width: 33%;
   height: 100%;
