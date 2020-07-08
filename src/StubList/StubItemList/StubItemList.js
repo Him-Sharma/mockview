@@ -12,15 +12,14 @@ const stubItemList = (props) => {
       { endpointName: "/photos" },
     ],
   });
+  let stubItems = null;
+  if (stubItemState.stubItems.length > 0) {
+    stubItems = stubItemState.stubItems.map((stubItem) => {
+      return <StubItem endpointName={stubItem.endpointName} />;
+    });
+  }
 
-  return (
-    <div className="StubItemList">
-      <StubItem endpointName={stubItemState.stubItems[0].endpointName} />
-      <StubItem endpointName={stubItemState.stubItems[1].endpointName} />
-      <StubItem endpointName={stubItemState.stubItems[2].endpointName} />
-      <StubItem endpointName={stubItemState.stubItems[3].endpointName} />
-    </div>
-  );
+  return <div className="StubItemList">{stubItems}</div>;
 };
 
 export default stubItemList;
