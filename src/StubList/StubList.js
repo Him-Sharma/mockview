@@ -1,12 +1,13 @@
 import React from "react";
+import StubItemList from "./StubItemList/StubItemList";
+import "./StubList.css";
 
-const mockList = () => {
+const stubList = () => {
   return (
-    <div className="flex-container">
-      {/* <StubItem /> */}
-      {/* <StubInfo /> */}
+    <div className="StubList">
+      <StubItemList />
     </div>
   );
 };
 
-export default mockList;
+export default stubList;
