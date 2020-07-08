@@ -1,16 +1,24 @@
-import React from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useState } from "react";
 import "./StubItemList.css";
+import StubItem from "./StubItem";
 
-const stubItemList = () => {
-  const style = {
-    color: "white",
-    font: "inherit",
-    border: "2px solid green",
-    padding: "8px",
-  };
+const stubItemList = (props) => {
+  const [stubItemState] = useState({
+    stubItems: [
+      { endpointName: "/posts" },
+      { endpointName: "/comments" },
+      { endpointName: "/albums" },
+      { endpointName: "/photos" },
+    ],
+  });
+
   return (
     <div className="StubItemList">
-      <h1 style={style}>/items</h1>
+      <StubItem endpointName={stubItemState.stubItems[0].endpointName} />
+      <StubItem endpointName={stubItemState.stubItems[1].endpointName} />
+      <StubItem endpointName={stubItemState.stubItems[2].endpointName} />
+      <StubItem endpointName={stubItemState.stubItems[3].endpointName} />
     </div>
   );
 };
