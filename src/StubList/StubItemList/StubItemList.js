@@ -6,16 +6,18 @@ import StubItem from "./StubItem";
 const stubItemList = (props) => {
   const [stubItemState] = useState({
     stubItems: [
-      { endpointName: "/posts" },
-      { endpointName: "/comments" },
-      { endpointName: "/albums" },
-      { endpointName: "/photos" },
+      { id: "1", endpointName: "/posts" },
+      { id: "2", endpointName: "/comments" },
+      { id: "3", endpointName: "/albums" },
+      { id: "4", endpointName: "/photos" },
     ],
   });
   let stubItems = null;
   if (stubItemState.stubItems.length > 0) {
     stubItems = stubItemState.stubItems.map((stubItem) => {
-      return <StubItem endpointName={stubItem.endpointName} />;
+      return (
+        <StubItem endpointName={stubItem.endpointName} key={stubItem.id} />
+      );
     });
   }
 
