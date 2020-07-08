@@ -1,31 +1,4 @@
 .App {
   text-align: center;
-}
-.header {
-  width: 100%;
-  font-size: calc(10px + 2vmin);
   background-color: #41495a;
-  color: #09d3ac;
-}
-.control {
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  background-color: #41495a;
-}
-.control > input{
-  margin: 10px;
-}
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #41495a;
-}
-.flex-container > div {
-  color: #09d3ac;
-  margin: 10px;
-  width: 33%;
-  height: 100%;
 }
