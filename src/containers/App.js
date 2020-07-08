@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Header from './Header/Header';
-import Control from './Control/Control';
-import StubList from './StubList/StubList';
+import Header from "../components/Header/Header";
+import Control from "../components/Control/Control";
+import StubList from "../components/StubList/StubList";
 
 function App() {
   return (

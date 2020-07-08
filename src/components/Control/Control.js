@@ -1,14 +1,14 @@
 import React from "react";
-import './Control.css';
+import "./Control.css";
 
 const control = () => {
   const style = {
-    backgroundColor: 'white',
-    font: 'inherit',
-    border: '1px solid green',
-    padding: '8px',
-    margin: 'auto 10px'
-  }
+    backgroundColor: "white",
+    font: "inherit",
+    border: "1px solid green",
+    padding: "8px",
+    margin: "auto 10px",
+  };
 
   return (
     <div className="Control">

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from "react";
 import "./StubItemList.css";
-import StubItem from "./StubItem";
+import StubItem from "./StubItem/StubItem";
 
 const stubItemList = (props) => {
   const [stubItemState] = useState({
