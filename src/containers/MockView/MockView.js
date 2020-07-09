@@ -9,7 +9,7 @@ class MockView extends Component {
     selectedStubItem: null,
   };
 
-  fetchMockHandler = () => {
+  fetchStubHandler = () => {
     const url = document.getElementById("serverUrlInput").value;
     axios.get(url).then((response) => {
       const stubItems = response.data.stubs;
@@ -23,7 +23,7 @@ class MockView extends Component {
         <h1>Mockview</h1>
         <section className="Control">
           <input type="text" id="serverUrlInput"></input>
-          <button onClick={this.fetchMockHandler}>Fetch Mocks</button>
+          <button onClick={this.fetchStubHandler}>Fetch Stubs</button>
         </section>
         <section className="StubContainer">
           <StubItemList stubItems={this.state.stubItems} />
