@@ -1,0 +1,15 @@
+.MockView {
+  color: white;
+}
+.StubContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto;
+}
+.Control * {
+  background-color: white;
+  font: inherit;
+  border: 1px solid green;
+  padding: 8px;
+  margin: auto 10px;
+}
