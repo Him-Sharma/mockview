@@ -29,6 +29,13 @@ exports[`App renders correctly 1`] = `
         <section
           class="StubContainer"
         >
+          <div
+            class="StubItemList"
+          >
+            <h1>
+              No stubitems to display!
+            </h1>
+          </div>
           <h1>
             No Stub items to display
           </h1>

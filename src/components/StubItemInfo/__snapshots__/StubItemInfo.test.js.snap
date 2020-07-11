@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<body>
+  <div>
+    <h1>
+      No Stub items to display
+    </h1>
+  </div>
+</body>
+`;
+
+exports[`should display stubItem information 1`] = `
+<body>
+  <div>
+    <div
+      class="StubItemInfo"
+      data-testid="messageText"
+    >
+      <h1>
+        Method: 
+        GET
+      </h1>
+      <h1>
+        Path: 
+        /posts
+      </h1>
+      <h1>
+        Responses: 
+      </h1>
+      <p>
+        StatusCode: 
+        200
+      </p>
+      <p>
+        body: 
+        {}
+      </p>
+    </div>
+  </div>
+</body>
+`;

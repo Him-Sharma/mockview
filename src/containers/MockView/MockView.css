@@ -13,3 +13,9 @@
   padding: 8px;
   margin: auto 10px;
 }
+.StubItemList {
+  border: 2px solid #09d3ac;
+  color: white;
+  flex-basis: 30%;
+  margin: 20px 20px;
+}

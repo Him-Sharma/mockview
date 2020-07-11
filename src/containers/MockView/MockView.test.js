@@ -24,6 +24,11 @@ it("should fetch stubs from a given url on click fetch stubs button", () => {
             },
           },
         ],
+        _links: {
+          self: {
+            href: "http://test",
+          },
+        },
       },
     ],
   };
