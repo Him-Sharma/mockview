@@ -4,7 +4,7 @@ import App from "./App";
 
 describe("App", () => {
   it("renders correctly", () => {
-    const app = render(<App />);
-    expect(app).toMatchSnapshot();
+    const { baseElement } = render(<App />);
+    expect(baseElement).toMatchSnapshot();
   });
 });

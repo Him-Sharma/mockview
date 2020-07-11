@@ -4,7 +4,7 @@ import MockView from "./MockView";
 
 describe("Mockview", () => {
   it("renders correctly", () => {
-    const mockview = render(<MockView />);
-    expect(mockview).toMatchSnapshot();
+    const { baseElement } = render(<MockView />);
+    expect(baseElement).toMatchSnapshot();
   });
 });
