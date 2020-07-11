@@ -5,8 +5,8 @@
   "dependencies": {
     "@babel/runtime": "^7.10.4",
     "axios": "^0.19.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css,scss,md}": [
@@ -37,7 +37,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm test -- --watchAll false"
+      "pre-push": "npm test -- --coverage --watchAll false"
     }
   },
   "devDependencies": {
@@ -47,6 +47,23 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!src/index.js",
+      "!src/serviceWorker.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }
