@@ -16,10 +16,13 @@ exports[`App renders correctly 1`] = `
           class="Control"
         >
           <input
+            data-testid="serverUrlInput"
             id="serverUrlInput"
             type="text"
           />
-          <button>
+          <button
+            data-testid="fetchStubButton"
+          >
             Fetch Stubs
           </button>
         </section>

@@ -22,8 +22,14 @@ class MockView extends Component {
       <div className="MockView">
         <h1>Mockview</h1>
         <section className="Control">
-          <input type="text" id="serverUrlInput"></input>
-          <button onClick={this.fetchStubHandler}>Fetch Stubs</button>
+          <input
+            type="text"
+            id="serverUrlInput"
+            data-testid="serverUrlInput"
+          ></input>
+          <button onClick={this.fetchStubHandler} data-testid="fetchStubButton">
+            Fetch Stubs
+          </button>
         </section>
         <section className="StubContainer">
           <StubItemList stubItems={this.state.stubItems} />

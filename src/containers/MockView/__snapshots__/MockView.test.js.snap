@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Mockview renders correctly 1`] = `
+exports[`renders correctly 1`] = `
 <body>
   <div>
     <div
@@ -13,10 +13,13 @@ exports[`Mockview renders correctly 1`] = `
         class="Control"
       >
         <input
+          data-testid="serverUrlInput"
           id="serverUrlInput"
           type="text"
         />
-        <button>
+        <button
+          data-testid="fetchStubButton"
+        >
           Fetch Stubs
         </button>
       </section>
