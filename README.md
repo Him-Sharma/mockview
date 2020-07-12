@@ -1,3 +1,12 @@
+## Introduction
+For the mock servers available, it becomes very difficult to keep a track of all the stubs and respective matchers/predicates. Idea behind mockview is to build a visualisation tool for your mocksever which can list all the stubs, along with details.
+
+### Features
+ - List all stubs from running mountebank or wiremock mock server
+ - Capability to view information for a stub as in matchers/predicates and responses
+ - Capability to search from a list of stubs
+ - Capability to sort stubs
+ 
 ## Available Scripts
 
 In the project directory, you can run:
