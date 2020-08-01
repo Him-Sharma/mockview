@@ -3,9 +3,14 @@
 exports[`renders correctly 1`] = `
 <body>
   <div>
-    <h1>
-      No Stub items to display
-    </h1>
+    <div
+      class="StubItemInfo"
+      data-testid="messageText"
+    >
+      <h1>
+        Select a stub to view information here.
+      </h1>
+    </div>
   </div>
 </body>
 `;
@@ -17,25 +22,27 @@ exports[`should display stubItem information 1`] = `
       class="StubItemInfo"
       data-testid="messageText"
     >
-      <h1>
-        Method: 
-        GET
-      </h1>
-      <h1>
-        Path: 
-        /posts
-      </h1>
-      <h1>
-        Responses: 
-      </h1>
-      <p>
-        StatusCode: 
-        200
-      </p>
-      <p>
-        body: 
-        {}
-      </p>
+      <div>
+        <h1>
+          Method: 
+          GET
+        </h1>
+        <h1>
+          Path: 
+          /posts
+        </h1>
+        <h1>
+          Responses: 
+        </h1>
+        <p>
+          StatusCode: 
+          200
+        </p>
+        <p>
+          body: 
+          {}
+        </p>
+      </div>
     </div>
   </div>
 </body>

@@ -9,7 +9,6 @@ class MockView extends Component {
     stubItems: [],
     selectedStubItem: null,
   };
-
   fetchStubHandler = () => {
     const url = document.getElementById("serverUrlInput").value;
     axios.get(url).then((response) => {

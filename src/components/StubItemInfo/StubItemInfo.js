@@ -2,9 +2,10 @@ import React from "react";
 import "./StubItemInfo.css";
 
 const stubItemInfo = (props) => {
+  let stubInformation = <h1>Select a stub to view information here.</h1>;
   if (props.selectedStubItem) {
-    return (
-      <div className="StubItemInfo" data-testid="messageText">
+    stubInformation = (
+      <div>
         <h1>Method: {props.selectedStubItem.predicates[0].equals.method}</h1>
         <h1>Path: {props.selectedStubItem.predicates[0].equals.path}</h1>
         <h1>Responses: </h1>
@@ -12,8 +13,11 @@ const stubItemInfo = (props) => {
         <p>body: {props.selectedStubItem.responses[0].is.body}</p>
       </div>
     );
-  } else {
-    return <h1>No Stub items to display</h1>;
   }
+  return (
+    <div className="StubItemInfo" data-testid="messageText">
+      {stubInformation}
+    </div>
+  );
 };
 export default stubItemInfo;

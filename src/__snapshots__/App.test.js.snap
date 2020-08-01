@@ -36,9 +36,14 @@ exports[`App renders correctly 1`] = `
               No stubitems to display!
             </h1>
           </div>
-          <h1>
-            No Stub items to display
-          </h1>
+          <div
+            class="StubItemInfo"
+            data-testid="messageText"
+          >
+            <h1>
+              Select a stub to view information here.
+            </h1>
+          </div>
         </section>
       </div>
     </div>
