@@ -3,50 +3,52 @@
 exports[`App renders correctly 1`] = `
 <body>
   <div>
-    <div
-      class="App"
-    >
-      <div
-        class="MockView"
-      >
-        <h1>
-          Mockview
-        </h1>
-        <section
-          class="Control"
-        >
-          <input
-            data-testid="serverUrlInput"
-            id="serverUrlInput"
-            type="text"
-          />
-          <button
-            data-testid="fetchStubButton"
-          >
-            Fetch Stubs
-          </button>
-        </section>
-        <section
-          class="StubContainer"
-        >
-          <div
-            class="StubItemList"
-          >
-            <h1>
-              No stubitems to display!
-            </h1>
-          </div>
-          <div
-            class="StubItemInfo"
-            data-testid="messageText"
-          >
-            <h1>
-              Select a stub to view information here.
-            </h1>
-          </div>
-        </section>
-      </div>
+    <div>
+      Mockview
     </div>
+    <main
+      class="Content"
+    >
+      <section
+        class="mockview-form"
+      >
+        <div
+          class="card"
+        >
+          <form>
+            <div
+              class="form-control"
+            >
+              <label
+                for="urlInput"
+              >
+                Mockserver url
+              </label>
+              <input
+                data-testid="urlInput"
+                id="urlInput"
+                type="text"
+              />
+            </div>
+            <div
+              class="mockview-form__actions"
+            >
+              <button
+                data-testid="submitButton"
+                type="submit"
+              >
+                Fetch Stubs
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section
+        class="stub-list"
+      >
+        <ul />
+      </section>
+    </main>
   </div>
 </body>
 `;

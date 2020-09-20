@@ -1,13 +1,13 @@
 import React from "react";
-import "./App.css";
+import Layout from "./components/Layout/Layout";
 import MockView from "./containers/MockView/MockView";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <Layout>
       <MockView />
-    </div>
+    </Layout>
   );
-}
+};
 
 export default App;

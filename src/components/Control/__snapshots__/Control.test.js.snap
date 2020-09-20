@@ -37,11 +37,6 @@ exports[`renders correctly 1`] = `
         </form>
       </div>
     </section>
-    <section
-      class="stub-list"
-    >
-      <ul />
-    </section>
   </div>
 </body>
 `;

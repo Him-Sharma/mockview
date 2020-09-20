@@ -11,7 +11,7 @@ it("renders correctly", () => {
   expect(baseElement).toMatchSnapshot();
 });
 
-it("should fetch stubs from a given url on click fetch stubs button", () => {
+it.skip("should fetch stubs from a given url on click fetch stubs button", () => {
   const testUrl = "http://test/5000";
   const response = {
     stubs: [
