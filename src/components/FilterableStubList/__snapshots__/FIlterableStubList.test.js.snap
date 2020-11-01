@@ -27,7 +27,16 @@ exports[`renders correctly 1`] = `
     <section
       class="stub-list"
     >
-      <ul />
+      <ul>
+        <li>
+          <span>
+            GET
+          </span>
+          <span>
+            /posts
+          </span>
+        </li>
+      </ul>
     </section>
   </div>
 </body>
