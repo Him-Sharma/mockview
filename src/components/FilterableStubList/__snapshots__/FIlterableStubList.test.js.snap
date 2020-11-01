@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<body>
+  <div>
+    <section
+      class="search"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="search-input"
+        >
+          <label>
+            Filter by Title
+          </label>
+          <input
+            data-testid="filterTextInput"
+            id="filterTextInput"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="stub-list"
+    >
+      <ul />
+    </section>
+  </div>
+</body>
+`;

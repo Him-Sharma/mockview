@@ -44,6 +44,27 @@ exports[`App renders correctly 1`] = `
         </div>
       </section>
       <section
+        class="search"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="search-input"
+          >
+            <label>
+              Filter by Title
+            </label>
+            <input
+              data-testid="filterTextInput"
+              id="filterTextInput"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </section>
+      <section
         class="stub-list"
       >
         <ul />

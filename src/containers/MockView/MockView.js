@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Aux from "../../hoc/Aux";
 import Control from "../../components/Control/Control";
-import StubList from "../../components/StubList/StubList";
+import FilterableStubList from "../../components/FilterableStubList/FilterableStubList";
 
 const MockView = () => {
   const [stubs, setStubs] = useState([]);
@@ -31,7 +31,7 @@ const MockView = () => {
   return (
     <Aux>
       <Control onFormSubmit={urlSubmitHandler} />
-      <StubList stubs={stubs} />
+      <FilterableStubList stubs={stubs} />
     </Aux>
   );
 };
