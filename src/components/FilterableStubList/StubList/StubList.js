@@ -11,7 +11,11 @@ const StubList = (props) => {
       stub.predicates[0].equals.path.includes(filterText)
     ) {
       stubs.push(
-        <li key={stub.id}>
+        <li
+          key={stub.id}
+          id={`stub-${stub.id}`}
+          data-testid={`stub-${stub.id}`}
+        >
           <span>{stub.predicates[0].equals.method}</span>
           <span>{stub.predicates[0].equals.path}</span>
         </li>

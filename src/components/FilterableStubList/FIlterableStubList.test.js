@@ -5,6 +5,7 @@ import FilterableStubList from "./FilterableStubList";
 afterEach(cleanup);
 const stubs = [
   {
+    id: "0",
     predicates: [
       {
         equals: {

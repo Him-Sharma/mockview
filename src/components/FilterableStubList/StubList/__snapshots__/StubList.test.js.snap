@@ -7,7 +7,10 @@ exports[`renders correctly 1`] = `
       class="stub-list"
     >
       <ul>
-        <li>
+        <li
+          data-testid="stub-0"
+          id="stub-0"
+        >
           <span>
             GET
           </span>
