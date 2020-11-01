@@ -2,6 +2,7 @@ import React from "react";
 import { render, fireEvent, cleanup } from "@testing-library/react";
 import MockView from "./MockView";
 import axios from "axios";
+import { act } from "react-dom/test-utils";
 
 jest.mock("axios");
 afterEach(cleanup);
@@ -11,7 +12,7 @@ it("renders correctly", () => {
   expect(baseElement).toMatchSnapshot();
 });
 
-it.skip("should fetch stubs from a given url on click fetch stubs button", () => {
+it("should fetch stubs from a given url on click fetch stubs button", () => {
   const testUrl = "http://test/5000";
   const response = {
     stubs: [
@@ -36,15 +37,14 @@ it.skip("should fetch stubs from a given url on click fetch stubs button", () =>
     data: response,
   });
 
-  const { getByTestId } = render(<MockView />);
-
-  //act
-  fireEvent.change(getByTestId("serverUrlInput"), {
-    target: { value: testUrl },
+  act(() => {
+    const { getByTestId } = render(<MockView />);
+    fireEvent.change(getByTestId("urlInput"), {
+      target: { value: testUrl },
+    });
+    fireEvent.click(getByTestId("submitButton"));
   });
-  fireEvent.click(getByTestId("fetchStubButton"));
 
-  //assert
   expect(axios.get).toHaveBeenCalledTimes(1);
   expect(axios.get).toHaveBeenCalledWith(testUrl);
 });
